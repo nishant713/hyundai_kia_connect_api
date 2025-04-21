@@ -151,12 +151,12 @@ class ApiImplType1(ApiImpl):
             "Authorization": token.access_token,
             "ccsp-service-id": self.CCSP_SERVICE_ID,
             "ccsp-application-id": self.APP_ID,
-            "Stamp": self._get_stamp(),
+           # "Stamp": self._get_stamp(),
             "ccsp-device-id": token.device_id,
             "Host": self.BASE_URL,
             "Connection": "Keep-Alive",
             "Accept-Encoding": "gzip",
-            "Ccuccs2protocolsupport": str(ccs2_support or 0),
+           # "Ccuccs2protocolsupport": str(ccs2_support or 0),
             "User-Agent": USER_AGENT_OK_HTTP,
         }
 
